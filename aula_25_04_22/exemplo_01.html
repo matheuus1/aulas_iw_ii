@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exemplo 03 - Países </title>
+</head>
+<body>
+
+    <h1> Verificar Nacionalidade </h1>
+    Sigla do país : <input type="text" name="sig" id="sig">
+    <input type="button" value="VERIFICAR" onclick="analisar()">
+    <div id="resultado"></div>
+
+    <script>
+        function analisar(){
+            var tex = document.querySelector('input#sig')
+            var res = document.querySelector('div#resultado')
+            var pais = Text(tex.value)
+
+            if(pais == 'BRA'){
+
+                res.innerHTML = `<p> Você é <strong> BRASILEIRO! </strong> </p>`
+
+            }else{
+
+                res.innerHTML = `<p> Você é <strong> ESTRANGEIRO! </strong> </p>`
+
+            }
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
