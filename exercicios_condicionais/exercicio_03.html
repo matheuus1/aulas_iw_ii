@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+
+<body>
+    <script>
+        var n1 = Number(prompt('Digite sua primeira nota:'))
+        var n2 = Number(prompt('Digite sua segunda nota: '))
+        m = (n1 + n2) / 2
+
+        if ((m >= 0) && (m <= 4)) {
+            alert(`Suas notas foram ${n1} e ${n2} \nSua média foi ${m} \nSeu conceito foi E \nVocê foi REPROVADO!!`)
+
+        }
+
+        else {
+            if ((m > 4) && (m <= 6)) {
+                alert(`Suas notas foram ${n1} e ${n2} \nSua média foi ${m} \nSeu conceito foi D \nVocê foi REPROVADO!!`)
+
+            }
+
+            else {
+                if ((m > 6) && (m <= 7.5)) {
+                    alert(`Suas notas foram ${n1} e ${n2} \nSua média foi ${m} \nSeu conceito foi C \nVocê foi APROVADO!!`)
+
+                }
+
+                else {
+                    if ((m > 7.5) && (m <= 9.0)) {
+                        alert(`Suas notas foram ${n1} e ${n2} \nSua média foi ${m} \nSeu conceito foi B \nVocê foi APROVADO!!`)
+
+                    }
+
+                    else {
+                        if ((m > 9) && (m <= 10)) {
+                            alert(`Suas notas foram ${n1} e ${n2} \nSua média foi ${m} \nSeu conceito foi A \nVocê foi APROVADO!!`)
+
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
