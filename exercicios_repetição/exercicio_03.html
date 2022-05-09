@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+
+<body>
+
+    <input type="button" value="REPETIR" onclick="fazer()">
+
+
+
+
+    <script>
+        var n = 0
+        var a = Number(prompt('Informe a população de A: '))
+        var b = Number(prompt('Informe a população de B: '))
+        var ca = Number(prompt('Informe a taxa de crescimento de A: '))
+        var cb = Number(prompt('Informe a taxa de crescimento de B: '))
+
+
+        if ((a < b) && (ca > cb)) {
+            while (a <= b) {
+                a = a + (a * (ca / 100))
+                b = b + (b * (cb / 100))
+                n++
+
+            }
+
+            alert(`A quantidade de anos necessárias foi ${n}`)
+
+        }
+
+        else {
+            alert('Coloque o valor de A menor do que o de B, e a taxa de crescimento de A maior do que a de B.')
+
+        }
+
+
+
+        function fazer() {
+            var n = 0
+            var a = Number(prompt('Informe a população de A: '))
+            var b = Number(prompt('Informe a população de B: '))
+            var ca = Number(prompt('Informe a taxa de crescimento de A: '))
+            var cb = Number(prompt('Informe a taxa de crescimento de B: '))
+
+
+            if ((a < b) && (ca > cb)) {
+                while (a <= b) {
+                    a = a + (a * (ca / 100))
+                    b = b + (b * (cb / 100))
+                    n++
+
+                }
+
+                alert(`A quantidade de anos necessárias foi ${n}`)
+
+            }
+
+            else {
+                alert('Coloque o valor de A menor do que o de B, e a taxa de crescimento de A maior do que a de B.')
+
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
